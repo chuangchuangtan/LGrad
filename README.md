@@ -2,19 +2,19 @@
 
 <p align="center">
 	<br>
-	BeijingJiaotong University
+	Beijing Jiaotong University, YanShan University
 </p>
 
 
 Reference github repository for the paper [Learning on Gradients: Generalized Artifacts Representation for GAN-Generated Images Detection](url). Tan CC et al., proceedings of the IEEE/CVF CVPR 2023 . If you use our code, please cite our paper:
 ```
 @inproceedings{
-tancc2023learning,
+tan2023learning,
 title={Learning on Gradients: Generalized Artifacts Representation for {GAN}-Generated Images Detection},
-author={tancc},
+author={Tan, Chuangchuang and Wei, Shikui and Gu, Guanghua and Wei, Yunchao and Zhao, Yao},
 booktitle={Conference on Computer Vision and Pattern Recognition 2023},
 year={2023},
-url={https://openreview.net/forum?id=MRZb82xUbi}
+url={}
 }
 ```
 
@@ -26,9 +26,14 @@ conda activate lgrad
 ```
 
 ## Getting the data
-
+Download dataset from [CNNDetection](https://github.com/peterwang512/CNNDetection).
 ## Transform Image to Gradients
-1. Download pretrained model of [stylegan](https://github.com/NVlabs/stylegan), and put this `<project dir>/img2grad/stylegan/network/`.
+1. Download pretrained model of [stylegan](https://github.com/NVlabs/stylegan), and put this `<project dir>/img2grad/stylegan/networks/`. Or run using
+```sh
+mkdir -p ./img2gad/stylegan/networks
+wget https://lid-1302259812.cos.ap-nanjing.myqcloud.com/tmp/karras2019stylegan-bedrooms-256x256.pkl -O ./img2gad/stylegan/networks/karras2019styl
+egan-bedrooms-256x256.pkl
+```
 2. Run using
 ```sh
 sh ./transform_img2grad.sh {Data-Root-Dir} {Grad-Save-Dir}
