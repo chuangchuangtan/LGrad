@@ -36,31 +36,21 @@ egan-bedrooms-256x256.pkl
 ```
 2. Run using
 ```sh
-sh ./transform_img2grad.sh {Data-Root-Dir} {Grad-Save-Dir}
+sh ./transform_img2grad.sh {GPU-ID} {Data-Root-Dir} {Grad-Save-Dir}
 ```
 
 ## Training the model 
 ```sh
-sh train-detector.sh
+sh ./train-detector.sh {GPU-ID} {Grad-Save-Dir}
 ```
 
 ## Testing the detector
 Download all pretrained weight files from<https://drive.google.com/drive/folders/17-MAyCpMqyn4b_DFP2LekrmIgRovwoix?usp=share_link>.
 ```sh
 cd CNNDetection
-CUDA_VISIBLE_DEVICES=0 python eval8gan.py --model_path {Model-Path}  --dataroot {Grad-Test-Path}
+CUDA_VISIBLE_DEVICES=0 python eval8gan.py --model_path {Model-Path}  --dataroot {Grad-Test-Path} --batch_size {BS}
 ```
 
 ## Acknowledgments
 
 This repository borrows partially from the [CNNDetection](https://github.com/peterwang512/CNNDetection) and [stylegan](https://github.com/NVlabs/stylegan)
-
-<!-- #### Other Training Options
-* <i>--patch_size</i>: training patch size
-* <i>--img_mini_b</i>: image mini-batch size
-* <i>--epoch</i>: number of training epochs
-* <i>--lr</i>: initial learning rate
-* <i>--schedule_lr_rate</i>: learning rate scheduler (after how many epochs to decrease)
-* <i>--bit_depth</i>: image bit depth datatype, 16 for `uint16` or 8 for `uint8`. Recall that we train with 16-bit images
-* <i>--dropout_rate</i>: the dropout rate of the `conv` unit at the network bottleneck
- -->
