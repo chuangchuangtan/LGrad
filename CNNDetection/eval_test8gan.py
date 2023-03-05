@@ -19,10 +19,6 @@ multiclass = [1, 1, 1, 0, 1, 0, 0, 0]
 opt = TestOptions().parse(print_options=False)
 model_name = os.path.basename(opt.model_path).replace('.pth', '')
 
-logpath = os.path.join(results_dir, opt.model_path.split('/')[-2])
-os.makedirs(logpath, mode = 0o777, exist_ok = True) 
-Logger(os.path.join(logpath, opt.model_path.split('/')[-1] + time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())+'.log'))
-
 dataroot = opt.dataroot
 print(f'Dataroot {opt.dataroot}')
 print(f'Model_path {opt.model_path}')
