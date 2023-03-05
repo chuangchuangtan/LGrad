@@ -5,11 +5,11 @@
 	Beijing Jiaotong University, YanShan University
 </p>
 
+<img src="./overall_pipeline.png" width="100%" alt="overall pipeline">
 
 Reference github repository for the paper [Learning on Gradients: Generalized Artifacts Representation for GAN-Generated Images Detection](url). Tan CC et al., proceedings of the IEEE/CVF CVPR 2023 . If you use our code, please cite our paper:
 ```
-@inproceedings{
-tan2023learning,
+@inproceedings{tan2023learning,
 title={Learning on Gradients: Generalized Artifacts Representation for {GAN}-Generated Images Detection},
 author={Tan, Chuangchuang and Wei, Shikui and Gu, Guanghua and Wei, Yunchao and Zhao, Yao},
 booktitle={Conference on Computer Vision and Pattern Recognition 2023},
