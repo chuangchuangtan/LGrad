@@ -94,9 +94,8 @@ if __name__ == '__main__':
         val_writer.add_scalar('accuracy', acc, model.total_steps)
         val_writer.add_scalar('ap', ap, model.total_steps)
         print("(Val @ epoch {}) acc: {}; ap: {}".format(epoch, acc, ap))
-        #testmodel()
         model.train()
 
     model.eval();testmodel()
     model.save_networks('last')
-    print(os.getcwd())
+    
