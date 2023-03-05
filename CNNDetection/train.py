@@ -12,7 +12,6 @@ from data import create_dataloader
 from networks.trainer import Trainer
 from options.train_options import TrainOptions
 from options.test_options import TestOptions
-from eval_config import *
 from util import Logger
 
 
