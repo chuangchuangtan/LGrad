@@ -17,8 +17,6 @@ year={2023},
 url={https://openreview.net/forum?id=MRZb82xUbi}
 }
 ```
-## Prepare Dataset
-
 
 ## Environment setup
 To start, we prefer creating the environment using conda:
