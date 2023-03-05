@@ -1,10 +1,12 @@
 #!/bin/bash
 
+#./transform_img2grad.sh 0 /root/ img2gad/stylegan/Grad_dataset/
 Classes='0_real 1_fake'
 GANmodelpath=$(cd $(dirname $0); pwd)/img2gad/stylegan/
 Model=karras2019stylegan-bedrooms-256x256.pkl
-Saverootdir=${GANmodelpath}/Grad_dataset/
-Imgrootdir='/root'
+Imgrootdir=$2
+Saverootdir=$3
+
 
 # Valdatas='airplane bicycle bird boat bottle bus car cat chair cow diningtable dog horse motorbike person pottedplant sheep sofa train tvmonitor'
 Valdatas='horse car cat chair'
