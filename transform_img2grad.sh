@@ -45,7 +45,7 @@ done
 
 
 Testdatas='biggan deepfake gaugan stargan cyclegan/apple cyclegan/horse cyclegan/orange cyclegan/summer cyclegan/winter cyclegan/zebra progan/airplane progan/bicycle progan/bird progan/boat progan/bottle progan/bus progan/car progan/cat progan/chair progan/cow progan/diningtable progan/dog progan/horse progan/motorbike progan/person progan/pottedplant progan/sheep progan/sofa progan/train progan/tvmonitor stylegan/bedroom stylegan/car stylegan/cat stylegan2/car stylegan2/cat stylegan2/church stylegan2/horse'
-Trainrootdir=${Imgrootdir}/test/
+Testrootdir=${Imgrootdir}/test/
 Savedir=$Saverootdir/test/
 
 for Testdata in $Testdatas
@@ -54,7 +54,7 @@ do
     do
         Imgdir=${Testdata}/${Class}
         CUDA_VISIBLE_DEVICES=$1 /usr/bin/python $GANmodelpath/img2grad.py 1\
-            ${Trainrootdir}${Imgdir} \
+            ${Testrootdir}${Imgdir} \
             ${Savedir}${Imgdir}_grad \
             ${GANmodelpath}networks/${Model} \
             1
