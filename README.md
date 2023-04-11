@@ -19,10 +19,10 @@ url={}
 ```
 
 ## Environment setup
-To start, we prefer creating the environment using conda:
+To get started, we suggest transforming the image into a gradient using the environment from [stylegan](https://github.com/NVlabs/stylegan). 
+Following this step, we recommend installing the required packages by running the command:
 ```sh
-conda env create -f environment.yml
-conda activate lgrad
+pip install -r requirements.txt
 ```
 
 ## Getting the data
