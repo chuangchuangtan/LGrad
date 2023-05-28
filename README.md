@@ -7,14 +7,14 @@
 
 <img src="./overall_pipeline.png" width="100%" alt="overall pipeline">
 
-Reference github repository for the paper [Learning on Gradients: Generalized Artifacts Representation for GAN-Generated Images Detection](url). Tan CC et al., proceedings of the IEEE/CVF CVPR 2023 . If you use our code, please cite our paper:
+Reference github repository for the paper [Learning on Gradients: Generalized Artifacts Representation for GAN-Generated Images Detection](https://openaccess.thecvf.com/content/CVPR2023/papers/Tan_Learning_on_Gradients_Generalized_Artifacts_Representation_for_GAN-Generated_Images_Detection_CVPR_2023_paper.pdf). Tan CC et al., proceedings of the IEEE/CVF CVPR 2023 . If you use our code, please cite our paper:
 ```
 @inproceedings{tan2023learning,
-title={Learning on Gradients: Generalized Artifacts Representation for {GAN}-Generated Images Detection},
-author={Tan, Chuangchuang and Wei, Shikui and Gu, Guanghua and Wei, Yunchao and Zhao, Yao},
-booktitle={Conference on Computer Vision and Pattern Recognition 2023},
-year={2023},
-url={}
+  title={Learning on Gradients: Generalized Artifacts Representation for GAN-Generated Images Detection},
+  author={Tan, Chuangchuang and Zhao, Yao and Wei, Shikui and Gu, Guanghua and Wei, Yunchao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={12105--12114},
+  year={2023}
 }
 ```
 
