@@ -19,8 +19,11 @@ Reference github repository for the paper [Learning on Gradients: Generalized Ar
 ```
 
 ## Environment setup
-To get started, we suggest transforming the image into a gradient using the environment from [stylegan](https://github.com/NVlabs/stylegan). 
-Following this step, we recommend installing the required packages by running the command:
+**Img2grad environment:** 
+We suggest transforming the image into a gradient using the tensorflow environment in docker image `nvcr.io/nvidia/tensorflow:21.02-tf1-py3` from [nvidia](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow/tags).
+
+**Classification environment:** 
+We recommend installing the required packages by running the command:
 ```sh
 pip install -r requirements.txt
 ```
