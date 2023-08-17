@@ -38,8 +38,7 @@ Download dataset from [CNNDetection](https://github.com/peterwang512/CNNDetectio
 1. Download pretrained model of [stylegan](https://github.com/NVlabs/stylegan), and put this `<project dir>/img2grad/stylegan/networks/`. Or run using
 ```sh
 mkdir -p ./img2gad/stylegan/networks
-wget https://lid-1302259812.cos.ap-nanjing.myqcloud.com/tmp/karras2019stylegan-bedrooms-256x256.pkl -O ./img2gad/stylegan/networks/karras2019styl
-egan-bedrooms-256x256.pkl
+wget https://lid-1302259812.cos.ap-nanjing.myqcloud.com/tmp/karras2019stylegan-bedrooms-256x256.pkl -O ./img2gad/stylegan/networks/karras2019stylegan-bedrooms-256x256.pkl
 ```
 2. Run using
 ```sh
@@ -60,4 +59,4 @@ CUDA_VISIBLE_DEVICES=0 python eval_test8gan.py --model_path {Model-Path}  --data
 
 ## Acknowledgments
 
-This repository borrows partially from the [CNNDetection](https://github.com/peterwang512/CNNDetection) and [stylegan](https://github.com/NVlabs/stylegan)
+This repository borrows partially from the [CNNDetection](https://github.com/peterwang512/CNNDetection), [stylegan](https://github.com/NVlabs/stylegan), and [genforce](https://github.com/genforce/genforce/).
