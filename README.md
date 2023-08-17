@@ -19,7 +19,7 @@ Reference github repository for the paper [Learning on Gradients: Generalized Ar
 ```
 ### Update
 - **2023.08.17** The Gradient data is released. [Baidu drive](https://pan.baidu.com/s/1Wmu6YgGPtcOOLRZeSTOjBw?pwd=xf8u)
-- **2023.08.17** The Pytorch version of img2grad  will be released.
+- **2023.08.17** The Pytorch version of img2grad is released.
 
 
 ## Environment setup
